@@ -46,7 +46,7 @@ iconCarrinho.addEventListener('click',
 const IrParaCheckOut = () =>
 {
     if(document.getElementById('preco-total').textContent != 'Total: $0.00')
-        window.location.href = window.location.origin + '/Checkout.html';   
+        window.location.href = window.location.origin + '/Project-Store'+ '/Checkout.html';   
         //window.open('http://localhost:5500/Checkout.html');
         //if(Object.keys(idProdQuantia).length!=0)
         // console.log('Tudo Certo')
