@@ -63,7 +63,7 @@ function finalizarcompra(evento)
     salvarLocalstorage('historico', historicoAtualizado)
 
     //window.open('http://localhost:5500/Pedidos.html');
-    window.location.href = window.location.origin + '/Pedidos.html';
+    window.location.href = window.location.origin + '/Project-Store'+'/Pedidos.html';
 
 }
 
