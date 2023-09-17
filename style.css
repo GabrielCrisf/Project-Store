@@ -1,0 +1,211 @@
+@import url(./TailComands.css);
+@import url(./StyleCheckout.css);
+@import url(./pedidos.css);
+
+
+#container-produto /* # -> referencia pelo ID  do card*/
+{
+    color: red;
+}
+
+.marca 
+{
+    color: blue;
+}
+
+.ContainerCart
+{
+/*     border-top: 20px solid rgb(216, 230, 216);
+    padding-top: 5px;
+    border-bottom: 20px solid rgb(216, 230, 216);
+    padding-bottom: 5px;
+    border-left: 20px solid rgb(216, 230, 216);
+    padding-left: 5px;
+    background-color: rgb(78, 15, 90); */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 60%;
+    row-gap: 5px;
+    padding-right: 5px;
+
+}
+
+.ADD_REM_B
+{
+    /* background-color: blue; REM DEPOIS */
+    display: flex;
+    flex-direction: row;
+    /* align-items: end; */
+    /* align-self: flex-end; */
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+    padding: 5px;
+    padding-top: 0;
+    border-radius: 10px;
+}
+
+
+
+.ADD_REM_B button
+{
+    margin: 5px;
+    /* margin-top: 0; */
+    border-radius: 5px;
+    text-align: center;
+    background-color: black;
+    background-color: rgb(52, 9, 65);
+    font-weight: bolder;
+    color: aliceblue;
+    /* font-size: large; */
+    cursor: pointer;
+}
+
+.ADD_REM_B p
+{
+    margin: 5px;
+    font-weight: bolder;
+    align-self: end;
+}
+
+.Bp
+{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.B-
+{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+
+#preco-total
+{
+    /* align-self: center; */
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: aliceblue;
+    color: rgb(7, 104, 55);
+    padding: 10px;
+    text-align: center;
+}
+
+
+.Filtros
+{
+    display: flex;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: rgb(20, 4, 41);
+    background-color: rgb(231, 228, 223);
+    color: aliceblue;
+    padding: 60px;
+    padding-bottom: 0;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .Filtros button
+{
+    background-color: cornsilk;
+    background-color: rgb(20, 4, 41);
+    font-size: larger;
+} */
+
+.Filtros label
+{
+    color: rgb(20, 4, 41);
+    font-size:larger;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* Id da label: exTodos */
+/* ID da Input: exibir-todos */
+/* class da secao pai: Filtros */
+
+#exibir-todos:checked + #exTodos
+/* + => significa: add quando o da esquerda acontecer, 
+as acoes abaixo o da direita */
+{
+    /* background-color: brown; */
+    font-size: x-large;
+    background-color: cornsilk;
+    color: rgb(20, 4, 41);
+
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#exibir-masc:checked + #exMasc
+/* + => significa: add quando o da esquerda acontecer, 
+as acoes abaixo o da direita */
+{
+    /* background-color: brown; */
+    font-size: x-large;
+    background-color: cornsilk;
+    color: rgb(20, 4, 41);
+
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#exibir-fem:checked + #exFem
+/* + => significa: add quando o da esquerda acontecer, 
+as acoes abaixo o da direita */
+{
+    /* background-color: brown; */
+    font-size: x-large;
+    background-color: cornsilk;
+    color: rgb(20, 4, 41);
+
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/* #exibir-tods ~ #exTodos ~ #exibir-masc ~ #exibir-fem */
+/* .Filtros:checked ~ #exTodos #exibir-masc #exibir-fem
+/* + => significa: add quando o da esquerda acontecer, 
+as acoes abaixo o da direita 
+{
+    font-size: larger;
+    background-color: black;
+
+    border-radius: 10px;
+    padding: 10px;
+
+
+} */
+
+#myCheckbox:checked +  {
+    color: blue; /* Muda a cor do rótulo quando o input é marcado */
+  }
+  
+  #myCheckbox:checked ~ #targetElement {
+    background-color: yellow; /* Muda o fundo do div quando o input é marcado */
+  }
+
+  .hid
+  {
+    visibility: hidden;
+    position:absolute;
+  }
+
+
+
+/* Pagina Checkout */
+
+#aa:hover
+{
+    cursor: pointer;
+    
+}
+  
+  
+  
+  

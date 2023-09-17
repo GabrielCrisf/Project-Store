@@ -1,0 +1,33 @@
+#container-main
+{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    row-gap: 20px;
+    padding: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color:rgba(178, 226, 238, 0.244);
+}
+
+.Pedidos-SEC
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: rgb(8, 8, 54);
+    background-color:rgba(255, 228, 196, 0.244);
+    border-radius: 5px;
+    padding: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Date
+{
+    display: flex;
+    align-self: center;
+    margin: 30px;
+    color: rgb(8, 8, 54);
+    font-weight: bolder;
+}

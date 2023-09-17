@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="./ResetCompleto.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="headerr">
+        <a href="/"><img class="Logo" src="./assets/logo/hashtag.svg" alt="Logo do Magazine"></a>
+        
+        <div class="DivButt">
+           <!--  <button class="Butt Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="Butt"><i class="fa-solid fa-user"></i></button> -->
+        </div>
+
+    </header>
+    <form id="Formss" action="">
+
+        
+        <section id="Userr" class="dados-usuario">
+
+            <p id="Title-Checke">Seus Dados</p>
+            <div class="div-user"> 
+                <label id="NameLab" for="Name">Nome: </label> 
+                <input id="Name" type="text" placeholder="Joao Pinheiro" required>
+
+                <label id="MailLab" for="Mail">Email: </label> 
+                <input id="Mail" type="email" placeholder="joaopinheiro@gmail.com" required>
+
+                <label id="FoneLab" for="Fone">Telefone: </label> 
+                <input id="Fone" type="tel" placeholder="(37) 99970-9098" required>
+
+                <label id="idadeLab" for="idade">Idade: </label> 
+                <input id="idade" type="number" placeholder="21" required>
+            </div>
+
+        </section>
+
+        <section id="dados-pagamento" class="dados-usuario">
+
+            <p id="Payment">Pagamento</p>
+            <div class="div-user"> 
+                <label id="Cartao" for="NumCard">Número do Cartão: </label> 
+                <input id="NumCard" type="text" placeholder="1111-1111-1111-1111" required>
+
+                <div id="CardVal">
+
+                    <div class="mini">
+                        <label id="CVV" for="cvv">CVV: </label> 
+                        <input id="cvv" type="number" placeholder="000" required>
+                    </div>
+
+                    <div class="mini">
+                        <label id="Vality" for="vality">Vencimento: </label> 
+                        <input id="vality" type="date" required>
+                    </div>
+                </div>
+
+                <label id="Titular" for="titular">Nome do Titular: </label> 
+                <input id="titular" type="text" placeholder="Joao Pinheiro" required>
+
+                <div class="div-user"> 
+                    <label id="cep" for="CEP">Código Postal</label> 
+                    <input id="CEP" type="number" placeholder="35661-000" required>
+
+                    <label id="addrLab" for="addr">Endereço</label> 
+                    <input id="addr" type="text" placeholder="Avenida Rio Branco" required>
+    
+                    <div id="CardVal">
+    
+                        <div class="mini">
+                            <label id="Hnum" for="numC">N°: </label> 
+                            <input id="numC" type="number" placeholder="00" required>
+                        </div>
+    
+                        <div class="mini">
+                            <label id="Compl" for="compl">Complemento: </label> 
+                            <input id="compl" type="text" required>
+                        </div>
+                    </div>
+
+                    <div id="CardVal">
+    
+                        <div class="mini">
+                            <label id="Citylab" for="city">Cidade </label> 
+                            <input id="city" type="text" placeholder="São Paulo" required>
+                        </div>
+    
+                        <div class="mini">
+                            <label id="StateLab" for="state">Estado: </label> 
+                            <input id="state" type="text" placeholder="SP" required>
+                        </div>
+                    </div>
+             </div>
+            <!-- <div> <label for="Pag"> Forma de Pagamento: </label><input id="Pag" type="text"></div> -->
+        </section>
+
+        <section id="produtos-checkout" class="dados-usuario">
+
+            <section id="Rota">
+                <p id="Pedidos">Revisão dos Pedidos</p>
+                <i id="ICC" class="fa-solid fa-rotate-right"></i>
+                <p id="BReload">Atualizar Carrinho</p>
+
+            </section>
+           
+             <section id="container-produtos-checkout">
+            </section>
+                <p id="total-REV">Total: $0.00</p>
+
+            
+            <section id="Cell-checkout">
+                <button id="ButEndCheck" type="submit" >Confirmar Compra
+            </button></section>
+        </section>
+
+    </form>
+    <!-- <footer></footer> -->
+    <script type="module" src="./src/CheckOut.js"></script>
+    <!-- <script src="./JS/menuCarrinho.js"></script> -->
+</body>
+</html>

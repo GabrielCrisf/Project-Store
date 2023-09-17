@@ -1,0 +1,293 @@
+.bord
+{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid; */
+    /* color:skyblue; */
+    width: 12.5rem; /* 12rem*/
+    margin: 5px;
+    align-items: center;
+    row-gap: 2px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px -5px rgba(7, 4, 58, 0.5);
+    border:2px black;
+    border-radius: 10px;
+}
+
+
+/* .bord img:hover
+{
+    animation: HoverImageCard 500ms infinite;
+}
+
+@keyframes HoverImageCard {
+
+    from {transform: scale(100%);}
+    to {transform: scale(110%);}
+    
+} */
+
+.bord img {
+    display: flex;
+    flex-direction: column;
+    transition: transform 500ms;
+    border-radius: 10px;
+}
+
+
+
+
+.bord img:hover {
+    position: relative;
+    transform: scale(110%);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Botao ADD */
+.ADDB
+{
+    color: aliceblue;
+    background-color: rgb(30, 27, 75); /* indigo 950 */
+    border: 0px;
+    width: 100%;
+}
+
+.ADDB:hover
+{
+    background-color: rgb(228, 215, 42);
+    cursor: pointer;
+    color:  rgb(30, 27, 75);
+}
+
+#container-produto
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(231, 228, 223);
+    gap: 20px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 2000px;
+}
+
+.headerr
+{
+    position: relative; /* config z-index */
+    display: flex;
+    background-color: rgb(30, 27, 75); /* indigo 950 */
+    padding: 5px;
+    justify-content: space-between; /* Joga cada filho (2) num canto*/
+    z-index: 1;
+    box-shadow: 0px 0px 10px 15px rgba(132, 130, 175, 0.548);
+    }
+
+.Logo
+{
+    height: 4.5rem;
+}
+
+.DivButt
+{
+    /* background-color: blue;  */
+    display: flex;
+    gap: 2px;
+    color: rgb(226, 232, 240);
+    /* justify é horizontal */
+    align-items: flex-end;
+    margin-left:5px;
+    margin-right: 5px;
+}
+
+
+.Butt
+{
+    color: rgb(226, 232, 240);
+    background-color: rgb(30, 27, 75);
+    border: 0px;
+    font-size: 18px;
+}
+
+.Butt:hover
+{
+    cursor: pointer;
+}
+
+#carrinho
+{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    position: fixed ; /* nao em cima do outro */
+    /* position: fixed ; Nao aceita zindex*/
+    right: 0px;
+    top: 0px;
+    background-color: rgb(14, 12, 44);
+    height: 95vh;
+    width: 360px;
+    color: beige;
+    border-left: rgb(231, 231, 231) double 2px;
+    justify-content: space-between;
+    z-index: 2;/* atras-- frente do Header e na frente dos cards */
+    right: -430px;
+}
+
+#cabecalho-carrinho
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 20px;
+    border-color: rgb(4, 32, 2) solid;
+    background-color: rgb(14, 12, 44);
+    padding: 0px;
+    font-size: x-large;
+}
+
+
+#fechar-carrinho
+{
+    background-color: rgb(14, 12, 44);
+    color: beige;
+    border: 0px;
+    font-size: x-large;
+}
+
+#fechar-carrinho:hover
+{
+    color: rgb(182, 179, 179);
+    cursor: pointer;
+}
+
+#ButEnd
+{
+    padding: 10px;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+#ButEnd:hover
+{
+    cursor: pointer;
+    color: rgb(204, 13, 13);
+    font-weight: bolder;
+}
+
+.fecharCarrinho
+{
+    animation: fechaCart 1.3s  ease-in-out;
+}
+
+@keyframes fechaCart {
+
+    from { right: 0px; }
+    to { right: -430px;}
+}
+
+.Vis
+{
+    right: -360px;
+    /* visibility: hidden; */
+}
+
+.abrirCarrinho
+{
+    visibility: visible;
+    animation: abrirCart 1.3s  ease-in-out;
+}
+
+@keyframes abrirCart {
+
+    from { right:-430px; }
+    to { right: 0px;}
+}
+
+
+/* Produtos do Carrinho */
+.Articlee
+{
+    display: flex;
+    background-color: rgb(210, 233, 227);
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    color: rgb(49, 4, 92);
+    position: relative;
+}
+
+.ImgArticlee
+{
+    height: 80px;
+    border-radius: 10px;
+}
+
+.Texts-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+    
+    padding: 10px;
+}
+
+.Cart-Title
+{
+    color: black;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.Cart-Tam
+{
+    font-weight: bold;
+    font-size: smaller;
+    color: brown;
+
+}
+
+.Cart-Price
+{
+    color: rgb(25, 128, 56);
+    font-weight: bolder;
+    font-size: large;
+
+}
+
+#ExcluirProduto
+{
+    background-color: rgb(187, 231, 220);
+    color: rgb(107, 107, 107);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 10px;
+    /* animation: ffp 500ms linear; */
+}
+
+#ExcluirProduto:hover
+{
+    cursor: pointer;
+    /* animation: ffh 500ms linear ; */
+    color: rgb(189, 49, 49);
+}
+
+@keyframes ffh
+{
+    from {color: rgb(107, 107, 107);}
+    to {color: rgb(189, 49, 49);}
+}
+
+@keyframes ffp
+{
+    from {}
+    to {color: rgb(107, 107, 107);}
+
+}
+
+.Exluir_do_Cart
+{
+    visibility: hidden;
+}
+
